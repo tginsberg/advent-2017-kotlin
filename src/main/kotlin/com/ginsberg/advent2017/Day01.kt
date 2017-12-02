@@ -4,7 +4,11 @@
 
 package com.ginsberg.advent2017
 
-
+/**
+ * AoC 2017, Day 1
+ *
+ * http://adventofcode.com/2017/day/1
+ */
 class Day01(private val input: String) {
 
     fun solvePart1(): Int =
