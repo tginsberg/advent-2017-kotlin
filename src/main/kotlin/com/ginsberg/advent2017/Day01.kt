@@ -24,8 +24,3 @@ class Day01(private val input: String) {
     }
 
 }
-
-fun main(args: Array<String>) {
-    println(Day01("1111").solvePart2())
-    println(Day01(resourceAsString("day_1_input.txt")).solvePart2())
-}
