@@ -9,8 +9,8 @@ I am trying to solve these on the day they are posted with clear, idiomatic solu
 I am also trying to write about each solution [on my blog](https://todd.ginsberg.com/). See the index below for a link to each post.
 ### Index
 
-   Day  | Title           |  Links                                     |
---------|-----------------|--------------------------------------------|
-    1   | Inverse Captcha | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day1/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day01.kt) [\[AoC\]](http://adventofcode.com/2017/day/1) |
+|   Day  | Title           |  Links                                       |
+| --------|-----------------|-------------------------------------------- |
+|    1    | Inverse Captcha | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day1/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day01.kt) [\[AoC\]](http://adventofcode.com/2017/day/1) |
 
 Copyright &copy; 2017 by Todd Ginsberg.
