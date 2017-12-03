@@ -13,6 +13,7 @@ I am also trying to write about each solution [on my blog](https://todd.ginsberg
 | --------|---------------------|--------------------------------------------- |
 |    1    | Inverse Captcha     | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day1/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day01.kt) [\[AoC\]](http://adventofcode.com/2017/day/1) |
 |    2    | Corruption Checksum | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day2/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day02.kt) [\[AoC\]](http://adventofcode.com/2017/day/2) |
+|    3    | Spiral Memory       | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day3/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day03.kt) [\[AoC\]](http://adventofcode.com/2017/day/3) |
 
 
-Copyright &copy; 2017 by Todd Ginsberg.s
+Copyright &copy; 2017 by Todd Ginsberg.
