@@ -18,4 +18,11 @@ internal class ResourcesKtTest {
     fun `resourceAsString concatenates lines with delimiter`() {
         assertThat(resourceAsString(fileName = "read_file_test_1.txt", delimiter = ":::")).isEqualTo("A:::B:::C")
     }
+
+    @Test
+    fun `resourceAsList reads lines`() {
+        assertThat(resourceAsList("read_file_test_1.txt"))
+            .hasSize(3)
+            .containsExactly("A", "B", "C")
+    }
 }
