@@ -15,24 +15,12 @@ class Day04(private val input: List<String>) {
 
     fun solvePart1(): Int =
         input
-            .filter { isValidPart1(it) }
-            .count()
+            .map { it.split(WHITESPACE) }
+            .count { it.size == it.toSet().size }
 
     fun solvePart2(): Int =
         input
-            .filter { isValidPart2(it) }
-            .count()
+            .map { it.split(WHITESPACE).map { it.toCharArray().sorted().joinToString("") } }
+            .count { it.size == it.toSet().size }
 
-    private fun isValidPart1(s: String): Boolean =
-        s.split(WHITESPACE)
-            .sorted()
-            .zipWithNext()
-            .count { it.first == it.second } == 0
-
-    private fun isValidPart2(s: String): Boolean =
-        s.split(WHITESPACE)
-            .map { it.toCharArray().sorted().joinToString("") }
-            .sorted()
-            .zipWithNext()
-            .count { it.first == it.second } == 0
 }
