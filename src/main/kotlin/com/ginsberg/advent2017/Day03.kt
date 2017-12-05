@@ -10,8 +10,9 @@ import kotlin.math.sqrt
 
 /**
  * AoC 2017, Day 3
- *
- * http://adventofcode.com/2017/day/3
+ *s
+ * Problem Description: http://adventofcode.com/2017/day/3
+ * Blog Post/Commentary: https://todd.ginsberg.com/post/advent-of-code/2017/day3/
  */
 class Day03(private val target: Int) {
 

@@ -7,7 +7,8 @@ package com.ginsberg.advent2017
 /**
  * AoC 2017, Day 2
  *
- * http://adventofcode.com/2017/day/2
+ * Problem Description: http://adventofcode.com/2017/day/2
+ * Blog Post/Commentary: https://todd.ginsberg.com/post/advent-of-code/2017/day2/
  */
 class Day02(stringInput: List<String>) {
 

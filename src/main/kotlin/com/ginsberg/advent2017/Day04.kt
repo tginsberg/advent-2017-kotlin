@@ -9,7 +9,8 @@ import com.ginsberg.advent2017.Constants.WHITESPACE
 /**
  * AoC 2017, Day 4
  *
- * http://adventofcode.com/2017/day/4
+ * Problem Description: http://adventofcode.com/2017/day/4
+ * Blog Post/Commentary: https://todd.ginsberg.com/post/advent-of-code/2017/day4/
  */
 class Day04(private val input: List<String>) {
 
