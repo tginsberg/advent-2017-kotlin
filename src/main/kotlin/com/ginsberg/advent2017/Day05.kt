@@ -21,7 +21,7 @@ class Day05(stringInput: List<String>) {
         jump(input, { if (it >= 3) -1 else 1 })
 
     tailrec private fun jump(offsets: IntArray, mutator: (Int) -> Int, pc: Int = 0, steps: Int = 0): Int =
-        if (pc !in (0 until offsets.size)) steps
+        if (pc < 0 || pc >= offsets.size) steps
         else {
             val nextPc = pc + offsets[pc]
             offsets[pc] += mutator(offsets[pc])
