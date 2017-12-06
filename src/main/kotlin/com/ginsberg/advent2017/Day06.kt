@@ -10,6 +10,9 @@ package com.ginsberg.advent2017
  * Problem Description: http://adventofcode.com/2017/day/6
  * Blog Post/Commentary: https://todd.ginsberg.com/post/advent-of-code/2017/day6/
  */
+
+typealias AnswerFunction = (Map<String, Int>, String) -> Int
+
 class Day06(stringInput: String) {
 
     private val input: IntArray = stringInput.split(Constants.WHITESPACE).map { it.toInt() }.toIntArray()
@@ -40,5 +43,3 @@ class Day06(stringInput: String) {
         }
     }
 }
-
-typealias AnswerFunction = (Map<String, Int>, String) -> Int
