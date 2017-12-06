@@ -26,7 +26,7 @@ class Day06(stringInput: String) {
 
     tailrec private fun reallocate(memory: IntArray,
                                    seen: Map<String, Int> = mutableMapOf(),
-                                   answer: (Map<String, Int>, String) -> Int): Int {
+                                   answer: AnswerFunction): Int {
         val hash = memory.joinToString()
         return if (hash in seen) answer(seen, hash)
         else {
@@ -40,3 +40,5 @@ class Day06(stringInput: String) {
         }
     }
 }
+
+typealias AnswerFunction = (Map<String, Int>, String) -> Int
