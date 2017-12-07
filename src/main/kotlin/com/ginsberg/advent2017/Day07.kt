@@ -55,9 +55,9 @@ data class Node(val name: String,
                 val children: MutableList<Node> = mutableListOf(),
                 var parent: Node? = null) {
 
-    fun findImbalance(imbalance: Int = 0): Int =
+    fun findImbalance(imbalance: Int? = null): Int =
 
-        if (imbalance > 0 && childrenAreBalanced) {
+        if (imbalance != null && childrenAreBalanced) {
             // We end when I have a positive imbalance and my children are balanced.
             weight - imbalance
         } else {
@@ -70,7 +70,7 @@ data class Node(val name: String,
 
             // Recurse, passing down our imbalance. If we don't know the imbalance, calculate it.
             // Calculate the imbalance as the absolute value of the difference of all distinct weights
-            badTree.findImbalance(imbalance.takeIf { it != 0 } ?: subtreesByWeight.keys.reduce { a, b -> a - b }.absoluteValue)
+            badTree.findImbalance(imbalance ?: subtreesByWeight.keys.reduce { a, b -> a - b }.absoluteValue)
         }
 
     private val totalWeight: Int by lazy {
