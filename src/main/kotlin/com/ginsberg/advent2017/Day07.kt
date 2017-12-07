@@ -22,29 +22,24 @@ class Day07(input: List<String>) {
         headOfTree.findImbalance()
 
     private fun parseInput(input: List<String>): Node {
-        val rowPattern = """^([a-z]+) \((\d+)\)(?: ->)?(.*)?$""".toRegex()
         val nodesByName = mutableMapOf<String, Node>()
-        val leftToMap = mutableSetOf<Pair<String, String>>()
+        val parentChildPairs = mutableSetOf<Pair<Node, String>>()
 
         input.forEach {
-            val groups = rowPattern.find(it)?.groupValues
-                ?: throw IllegalStateException("Should not have had a bad group")
-
-            val node = Node(groups[1].trim(), groups[2].toInt())
+            val groups = """\w+""".toRegex().findAll(it).toList().map { it.value }
+            val node = Node(groups[0].trim(), groups[1].toInt())
             nodesByName.put(node.name, node)
 
-            groups[3].split(",")
-                .filter { it.isNotBlank() }
-                .forEach { child ->
-                    leftToMap.add(Pair(node.name, child.trim()))
-                }
+            groups.drop(2).forEach {
+                parentChildPairs.add(Pair(node, it.trim()))
+            }
         }
 
-        leftToMap.forEach { (parent, child) ->
-            val pNode = nodesByName.getValue(parent)
-            val cNode = nodesByName.getValue(child)
-            pNode.children.add(cNode)
-            cNode.parent = pNode
+        parentChildPairs.forEach { (parent, childName) ->
+            with(nodesByName.getValue(childName)) {
+                parent.children.add(this)
+                this.parent = parent
+            }
         }
 
         // Find the one node we have without a parent. Or freak out.
@@ -72,7 +67,7 @@ data class Node(val name: String,
             val badTree = subtreesByWeight.minBy { it.value.size }?.value?.first()
                 ?: throw IllegalStateException("Should not be balanced here.")
 
-            // Calculate the imbalanced as the absolute value of all distinct weights
+            // Calculate the imbalance as the absolute value of the difference of all distinct weights
             val absBadWeight = subtreesByWeight.keys.reduce { a, b -> a - b }.absoluteValue
 
             badTree.findImbalance(absBadWeight)
