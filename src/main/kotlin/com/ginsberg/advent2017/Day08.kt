@@ -30,14 +30,12 @@ class Day08(input: List<String>) {
 
         input
             .map {
-                instructionRegex.findAll(it).toList().map { it.value }
-            }
-            .map {
-                val condition = createCondition(it[5], it[6].toInt())
-                if (it[1] == "inc")
-                    Instruction(condition, it[4], it[0]) { n -> n + it[2].toInt() }
+                val groups = instructionRegex.findAll(it).toList().map { it.value }
+                val condition = createCondition(groups[5], groups[6].toInt())
+                if (groups[1] == "inc")
+                    Instruction(condition, groups[4], groups[0]) { it + groups[2].toInt() }
                 else
-                    Instruction(condition, it[4], it[0]) { n -> n - it[2].toInt() }
+                    Instruction(condition, groups[4], groups[0]) { it - groups[2].toInt() }
             }
 
     private fun createCondition(symbol: String, amount: Int): (Int) -> Boolean =
