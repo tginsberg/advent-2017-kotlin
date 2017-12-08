@@ -18,5 +18,7 @@ I am also trying to write about each solution [on my blog](https://todd.ginsberg
 |    5    | A Maze of Twisty Trampolines, All Alike | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day5/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day05.kt) [\[AoC\]](http://adventofcode.com/2017/day/5) |
 |    6    | Memory Reallocation                     | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day6/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day06.kt) [\[AoC\]](http://adventofcode.com/2017/day/6) |
 |    7    | Recursive Circus                        | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day7/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day07.kt) [\[AoC\]](http://adventofcode.com/2017/day/7) |
+|    8    | I Heard You Like Registers              | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day8/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day08.kt) [\[AoC\]](http://adventofcode.com/2017/day/8) |
+
 
 Copyright &copy; 2017 by Todd Ginsberg.
