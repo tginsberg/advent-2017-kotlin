@@ -24,11 +24,10 @@ class Day09(private val input: String) {
     fun solvePart2(): Int =
         garbage.findAll(cleanInput).sumBy { it.value.length - 2 }
 
-    private tailrec fun scoreGroups(stream: List<Char>, score: Int = 0, depth: Int = 1): Int {
-        return when {
+    private tailrec fun scoreGroups(stream: List<Char>, score: Int = 0, depth: Int = 1): Int =
+        when {
             stream.isEmpty() -> score
             stream.first() == '}' -> scoreGroups(stream.drop(1), score, depth - 1)
             else -> scoreGroups(stream.drop(1), score + depth, depth + 1)
         }
-    }
 }
