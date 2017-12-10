@@ -25,7 +25,7 @@ class Day10(input: String, part1: Boolean, ringSize: Int = 256) {
         runForLengths(64)
         return ring
             .toList()
-            .windowed(16, 16)
+            .chunked(16)
             .joinToString("") { it.xor().toHex(2) }
     }
 
