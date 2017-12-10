@@ -26,4 +26,4 @@ fun IntArray.swap(a: Int, b: Int): IntArray {
 fun List<Int>.xor(): Int = this.reduce { a, b -> a xor b }
 
 // Int to HEX String with leading zeros...
-fun Int.toHex(width: Int = 1): String = String.format("%0${width}x", this)
+fun Int.toHex(width: Int = 1): String = "%0${width}x".format(this)
