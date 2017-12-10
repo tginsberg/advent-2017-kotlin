@@ -33,4 +33,50 @@ internal class ExtensionsKtTest {
         assertThat(listOf(-2, 0, 2, 4, 6).map { it.isOdd() }).containsOnly(false)
         assertThat(listOf(-1, 1, 3, 5, 7).map { it.isOdd() }).containsOnly(true)
     }
+
+    @Test
+    fun `swapping valid indexes are swapped`() {
+        assertThat(listOf(10, 20, 30).toIntArray().swap(0, 1))
+            .containsExactly(20, 10, 30)
+    }
+
+    @Test
+    fun `swapping left index under range freaks out`() {
+        assertThatThrownBy { listOf(10, 20, 30).toIntArray().swap(-1, 1) }
+            .isInstanceOf(IllegalArgumentException::class.java)
+    }
+
+    @Test
+    fun `swapping left index over range freaks out`() {
+        assertThatThrownBy { listOf(10, 20, 30).toIntArray().swap(3, 1) }
+            .isInstanceOf(IllegalArgumentException::class.java)
+    }
+
+    @Test
+    fun `swapping right index under range freaks out`() {
+        assertThatThrownBy { listOf(10, 20, 30).toIntArray().swap(1, -1) }
+            .isInstanceOf(IllegalArgumentException::class.java)
+    }
+
+    @Test
+    fun `swapping right index over range freaks out`() {
+        assertThatThrownBy { listOf(10, 20, 30).toIntArray().swap(1, -3) }
+            .isInstanceOf(IllegalArgumentException::class.java)
+    }
+
+    @Test
+    fun `xor a list of integers`() {
+        assertThat(listOf(65, 27, 9, 1, 4, 3, 40, 50, 91, 7, 6, 0, 2, 5, 68, 22).xor())
+            .isEqualTo(64)
+    }
+
+    @Test
+    fun `hex string is lower case`() {
+        assertThat(15.toHex()).isEqualTo("f")
+    }
+
+    @Test
+    fun `hex string with leading zeros`() {
+        assertThat(15.toHex(2)).isEqualTo("0f")
+    }
 }

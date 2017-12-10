@@ -20,5 +20,6 @@ I am also trying to write about each solution [on my blog](https://todd.ginsberg
 |    7    | Recursive Circus                        | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day7/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day07.kt) [\[AoC\]](http://adventofcode.com/2017/day/7) |
 |    8    | I Heard You Like Registers              | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day8/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day08.kt) [\[AoC\]](http://adventofcode.com/2017/day/8) |
 |    9    | Stream Processing                       | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day9/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day09.kt) [\[AoC\]](http://adventofcode.com/2017/day/9) |
+|   10    | Knot Hash                               | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day10/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day10.kt) [\[AoC\]](http://adventofcode.com/2017/day/10) |
 
 Copyright &copy; 2017 by Todd Ginsberg.
