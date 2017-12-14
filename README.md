@@ -24,5 +24,6 @@ I am also trying to write about each solution [on my blog](https://todd.ginsberg
 |   11    | Hex Ed                                  | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day11/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day11.kt) [\[AoC\]](http://adventofcode.com/2017/day/11) |
 |   12    | Digital Plumber                         | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day12/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day12.kt) [\[AoC\]](http://adventofcode.com/2017/day/12) |
 |   13    | Packet Scanners                         | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day13/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day13.kt) [\[AoC\]](http://adventofcode.com/2017/day/13) |
+|   14    | Disk Defragmentation                    | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day14/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day14.kt) [\[AoC\]](http://adventofcode.com/2017/day/14) |
 
 Copyright &copy; 2017 by Todd Ginsberg.
