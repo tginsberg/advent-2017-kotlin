@@ -3,7 +3,7 @@ package com.ginsberg.advent2017
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
-internal class Day12Text {
+internal class Day12Test {
 
     private val sampleInput = listOf(
         "0 <-> 2",

@@ -3,7 +3,7 @@ package com.ginsberg.advent2017
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
-internal class Day11Text {
+internal class Day11Test {
 
     @Test
     fun `Part 1 matches example`() {
