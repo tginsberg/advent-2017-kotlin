@@ -14,8 +14,14 @@ fun Int.isOdd(): Boolean = this % 2 != 0
 
 // In-place swap elements on an IntArray
 fun IntArray.swap(a: Int, b: Int): IntArray {
-    if (a !in (0 until size)) throw IllegalArgumentException("Swap value out of range")
-    if (b !in (0 until size)) throw IllegalArgumentException("Swap value out of range")
+    val tmp = this[a]
+    this[a] = this[b]
+    this[b] = tmp
+    return this
+}
+
+// In-place swap elements on a CharArray
+fun CharArray.swap(a: Int, b: Int): CharArray {
     val tmp = this[a]
     this[a] = this[b]
     this[b] = tmp
