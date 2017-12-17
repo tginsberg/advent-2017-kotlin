@@ -14,7 +14,9 @@ import kotlin.math.sqrt
  * Problem Description: http://adventofcode.com/2017/day/3
  * Blog Post/Commentary: https://todd.ginsberg.com/post/advent-of-code/2017/day3/
  */
-class Day03(private val target: Int) {
+class Day03(input: String) {
+
+    private val target = input.toInt()
 
     fun solvePart1(): Int {
         val sideLength = lengthOfSideWith(target)
