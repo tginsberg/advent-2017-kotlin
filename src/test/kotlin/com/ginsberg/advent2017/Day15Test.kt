@@ -3,7 +3,7 @@ package com.ginsberg.advent2017
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
-internal class Day15Text {
+internal class Day15Test {
 
     private val sampleInput = listOf(
         "Generator A starts with 65",

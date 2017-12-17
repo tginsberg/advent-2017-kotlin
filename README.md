@@ -27,5 +27,6 @@ I am also trying to write about each solution [on my blog](https://todd.ginsberg
 |   14    | Disk Defragmentation                    | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day14/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day14.kt) [\[AoC\]](http://adventofcode.com/2017/day/14) |
 |   15    | Dueling Generators                      | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day15/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day15.kt) [\[AoC\]](http://adventofcode.com/2017/day/15) |
 |   16    | Permutation Promenade                   | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day16/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day16.kt) [\[AoC\]](http://adventofcode.com/2017/day/16) |
+|   17    | Spinlock                                | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day17/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day17.kt) [\[AoC\]](http://adventofcode.com/2017/day/17) |
 
 Copyright &copy; 2017 by Todd Ginsberg.

@@ -3,7 +3,7 @@ package com.ginsberg.advent2017
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
-internal class Day16Text {
+internal class Day16Test {
 
     private val sampleInput = "s1, x3/4, pe/b"
 
