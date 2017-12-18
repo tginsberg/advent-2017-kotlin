@@ -48,17 +48,19 @@ class Day08(input: List<String>) {
             ">=" -> { n -> n >= amount }
             else -> throw IllegalArgumentException("Unknown symbol: $symbol")
         }
-}
 
-class Instruction(private val condition: (Int) -> Boolean,
-                  private val conditionRegister: String,
-                  private val instructionRegister: String,
-                  private val changer: (Int) -> Int) {
+    class Instruction(private val condition: (Int) -> Boolean,
+                      private val conditionRegister: String,
+                      private val instructionRegister: String,
+                      private val changer: (Int) -> Int) {
 
-    fun execute(registers: MutableMap<String, Int>): Int {
-        if (condition(registers.getOrDefault(conditionRegister, 0))) {
-            registers[instructionRegister] = changer(registers.getOrDefault(instructionRegister, 0))
+        fun execute(registers: MutableMap<String, Int>): Int {
+            if (condition(registers.getOrDefault(conditionRegister, 0))) {
+                registers[instructionRegister] = changer(registers.getOrDefault(instructionRegister, 0))
+            }
+            return registers.getOrDefault(instructionRegister, 0)
         }
-        return registers.getOrDefault(instructionRegister, 0)
     }
+
 }
+
