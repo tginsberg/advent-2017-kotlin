@@ -72,4 +72,22 @@ internal class ExtensionsKtTest {
     fun `hex string with leading zeros`() {
         assertThat(15.toHex(2)).isEqualTo("0f")
     }
+
+    @Test
+    fun `Map deref takes known string`() {
+        assertThat(mapOf("a" to 3L).deref("a"))
+            .isEqualTo(3L)
+    }
+
+    @Test
+    fun `Map deref converts long string`() {
+        assertThat(mapOf("a" to 2L).deref("3"))
+            .isEqualTo(3L)
+    }
+
+    @Test
+    fun `Map deref gives up trying by returning zero`() {
+        assertThat(mapOf("a" to 2L).deref("!"))
+            .isEqualTo(0L)
+    }
 }

@@ -33,3 +33,13 @@ fun List<Int>.xor(): Int = this.reduce { a, b -> a xor b }
 
 // Int to HEX String with leading zeros...
 fun Int.toHex(width: Int = 1): String = "%0${width}x".format(this)
+
+// Find the value in the Map, or convert it to a Long and return it.
+fun Map<String, Long>.deref(value: String): Long =
+    this.getOrElse(value) {
+        try {
+            value.toLong()
+        } catch (e: NumberFormatException) {
+            0
+        }
+    }
