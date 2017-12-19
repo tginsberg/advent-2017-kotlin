@@ -48,7 +48,7 @@ class Day03(input: String) {
 
 class Grid(size: Int) {
     private var pointer: Pair<Int, Int> = Pair(size / 2, size / 2)
-    private var direction: Direction = East
+    private var direction: Direction = Direction.East
     private val grid: List<IntArray> = (0 until size).map { IntArray(size) }.apply {
         this[pointer.first][pointer.second] = 1
     }
@@ -78,29 +78,33 @@ class Grid(size: Int) {
         if (x in (0 until grid.size) && y in (0 until grid.size)) grid[x][y]
         else null
 
+    sealed class Direction {
+        abstract fun move(point: Pair<Int, Int>): Pair<Int, Int>
+        abstract val turn: Direction
+
+        object East : Direction() {
+            override fun move(point: Pair<Int, Int>): Pair<Int, Int> = Pair(point.first + 1, point.second)
+            override val turn = North
+        }
+
+        object West : Direction() {
+            override fun move(point: Pair<Int, Int>): Pair<Int, Int> = Pair(point.first - 1, point.second)
+            override val turn = South
+        }
+
+        object North : Direction() {
+            override fun move(point: Pair<Int, Int>): Pair<Int, Int> = Pair(point.first, point.second + 1)
+            override val turn = West
+        }
+
+        object South : Direction() {
+            override fun move(point: Pair<Int, Int>): Pair<Int, Int> = Pair(point.first, point.second - 1)
+            override val turn = East
+        }
+    }
+
 }
 
-sealed class Direction {
-    abstract fun move(point: Pair<Int, Int>): Pair<Int, Int>
-    abstract val turn: Direction
-}
 
-object East : Direction() {
-    override fun move(point: Pair<Int, Int>): Pair<Int, Int> = Pair(point.first + 1, point.second)
-    override val turn = North
-}
 
-object West : Direction() {
-    override fun move(point: Pair<Int, Int>): Pair<Int, Int> = Pair(point.first - 1, point.second)
-    override val turn = South
-}
 
-object North : Direction() {
-    override fun move(point: Pair<Int, Int>): Pair<Int, Int> = Pair(point.first, point.second + 1)
-    override val turn = West
-}
-
-object South : Direction() {
-    override fun move(point: Pair<Int, Int>): Pair<Int, Int> = Pair(point.first, point.second - 1)
-    override val turn = East
-}
