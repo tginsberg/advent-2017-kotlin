@@ -31,5 +31,6 @@ I am also trying to write about each solution [on my blog](https://todd.ginsberg
 |   18    | Duet                                          | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day18/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day18.kt) [\[AoC\]](http://adventofcode.com/2017/day/18) |
 |   18    | Duet - Part 2 using Coroutines                | \[Blog Post - Coming soon\] [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day18Coroutines.kt) [\[AoC\]](http://adventofcode.com/2017/day/18) |
 |   19    | A Series of Tubes                             | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day19/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day19.kt) [\[AoC\]](http://adventofcode.com/2017/day/19) |
+|   20    | Particle Swarm                                | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day20/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day20.kt) [\[AoC\]](http://adventofcode.com/2017/day/20) |
 
 Copyright &copy; 2017 by Todd Ginsberg.
