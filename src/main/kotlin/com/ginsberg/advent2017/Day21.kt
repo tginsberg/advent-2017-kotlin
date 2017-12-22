@@ -4,7 +4,7 @@
 
 package com.ginsberg.advent2017
 
-import com.ginsberg.advent2017.grid.SquareGrid
+import com.ginsberg.advent2017.grid.FractalGrid
 import com.ginsberg.advent2017.grid.join
 
 /**
@@ -16,8 +16,8 @@ import com.ginsberg.advent2017.grid.join
 class Day21(input: List<String>) {
 
     private val rowSplit = " => ".toRegex()
-    private val transforms: Map<SquareGrid, SquareGrid> = parseInput(input)
-    private val startGrid = SquareGrid(".#./..#/###")
+    private val transforms: Map<FractalGrid, FractalGrid> = parseInput(input)
+    private val startGrid = FractalGrid(".#./..#/###")
 
     fun solve(iterations: Int): Int {
         var grid = startGrid
@@ -30,13 +30,13 @@ class Day21(input: List<String>) {
     }
 
 
-    private fun parseInputRow(input: String): Pair<SquareGrid, SquareGrid> =
+    private fun parseInputRow(input: String): Pair<FractalGrid, FractalGrid> =
         input.split(rowSplit)
-            .map { SquareGrid(it) }
+            .map { FractalGrid(it) }
             .let { it.first() to it.last() }
 
 
-    private fun parseInput(input: List<String>): Map<SquareGrid, SquareGrid> =
+    private fun parseInput(input: List<String>): Map<FractalGrid, FractalGrid> =
         input.map { parseInputRow(it) }.flatMap { pair ->
             pair.first.combinations().map { combo ->
                 combo to pair.second
