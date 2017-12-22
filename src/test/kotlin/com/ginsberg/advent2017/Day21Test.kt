@@ -21,7 +21,6 @@ internal class Day21Test {
             .isEqualTo(194)
     }
 
-
     @Test
     fun `Part 2 actual answer`() {
         assertThat(Day21(resourceAsList("day_21_input.txt")).solve(18))
