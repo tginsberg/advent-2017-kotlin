@@ -34,5 +34,6 @@ I am also trying to write about each solution [on my blog](https://todd.ginsberg
 |   20    | Particle Swarm                                | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day20/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day20.kt) [\[AoC\]](http://adventofcode.com/2017/day/20) |
 |   21    | Fractal Art                                   | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day21/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day21.kt) [\[AoC\]](http://adventofcode.com/2017/day/21) |
 |   22    | Sporifica Virus                               | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day22/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day22.kt) [\[AoC\]](http://adventofcode.com/2017/day/22) |
+|   23    | Coprocessor Conflagration                     | [\[Blog Post\]](https://todd.ginsberg.com/post/advent-of-code/2017/day23/) [\[Code\]](https://github.com/tginsberg/advent-2017-kotlin/blob/master/src/main/kotlin/com/ginsberg/advent2017/Day23.kt) [\[AoC\]](http://adventofcode.com/2017/day/23) |
 
 Copyright &copy; 2017 by Todd Ginsberg.
